@@ -4,6 +4,7 @@ import UserTypings from "./components/UserTypings";
 import WordsContainer from "./components/WordsContainer";
 import useEngine from "./hooks/useEngine";
 import { calculateAccuracyPercentage } from "./utils/helpers";
+import { LinearGradient } from "react-text-gradients";
 
 // const words = faker.random.words(10);
 
@@ -13,6 +14,12 @@ function App() {
 
   return (
     <>
+      <h1 className="mt-20 mb-20 text-5xl font-bold text-center md:text-6xl">
+        <LinearGradient gradient={["to right", " yellow, red"]}>
+          Lightning Type
+        </LinearGradient>
+      </h1>
+
       <CountdownTimer timeLeft={timeLeft} />
       {/* <GeneratedWords words={words} /> */}
       <WordsContainer>
@@ -29,7 +36,7 @@ function App() {
       />
       {state !== "finish" ? null : (
         <Results
-          className="mt-10"
+          className="mt-10 mb-10"
           errors={errors}
           accuracyPercentage={calculateAccuracyPercentage(errors, totalTyped)}
           total={totalTyped}
