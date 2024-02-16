@@ -4,7 +4,7 @@ import useCountdownTimer from "./useCountdownTimer";
 import useTypings from "./useTypings";
 import { countErrors } from "../utils/helpers";
 
-const NUMBER_OF_WORDS = 12; // number of words to generate each time
+const NUMBER_OF_WORDS = 20; // number of words to generate each time
 
 const COUNTDOWN_SECONDS = 30; // timeLeft seconds
 

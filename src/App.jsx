@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-      <h1 className="mt-20 mb-20 text-5xl font-bold text-center md:text-6xl">
+      <h1 className="mb-20 text-5xl font-bold text-center mt-15 md:text-6xl">
         <LinearGradient gradient={["to right", " yellow, red"]}>
           Lightning Type
         </LinearGradient>
